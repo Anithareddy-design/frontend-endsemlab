@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #183b32;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 90px 8%;
+  color: white;
+  background: linear-gradient(#0007, #0007),
+    url("https://images.unsplash.com/photo-1562774053-701939374585?w=1200")
+    center / cover;
+}
+
+.hero a, button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #e9b44c;
+  color: #222;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section:not(.hero) {
+  padding: 30px 8%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 450px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 8%;
+  }
+}
